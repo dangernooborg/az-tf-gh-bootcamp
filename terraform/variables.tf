@@ -5,5 +5,5 @@ variable "bootcamp_resource_group_name1" {
 
 variable "bootcamp_resource_group_location1" {
   type        = string
-  description = "I am a resource group name"
+  description = "I am a resource group location"
 }
