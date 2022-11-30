@@ -35,5 +35,5 @@ variable "bootcamp_bastion_pip_name" {
 
 variable "bootcamp_bastion_name" {
   type = string
-  description = "I am a bastion PIP name"
+  description = "I am a bastion host name"
 }
