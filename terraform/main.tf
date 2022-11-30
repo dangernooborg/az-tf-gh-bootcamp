@@ -28,6 +28,7 @@ resource "azurerm_bastion_host" "bootcampBastion" {
   name                = var.bootcamp_bastion_name
   location            = azurerm_resource_group.rg1.location
   resource_group_name = azurerm_resource_group.rg1.name
+  sku                 = "Standard"
 
   ip_configuration {
     name                 = "configuration"
