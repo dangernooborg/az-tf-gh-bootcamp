@@ -37,3 +37,11 @@ resource "azurerm_bastion_host" "bootcampBastion" {
     public_ip_address_id = azurerm_public_ip.bastionPIP.id
   }
 }
+
+resource "azurerm_storage_account" "bootcampSA" {
+  name                     = var.bootcamp_storage_account_name
+  location                 = azurerm_resource_group.rg1.location
+  resource_group_name      = azurerm_resource_group.rg1.name
+  account_tier             = "Standard"
+  account_replication_type = "GRS"
+}

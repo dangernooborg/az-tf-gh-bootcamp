@@ -24,16 +24,21 @@ variable "bootcamp_bastion_subnet_name" {
 }
 
 variable "bootcamp_bastion_subnet_address_space" {
-  type = string
+  type        = string
   description = "I am a bastion address space"
 }
 
 variable "bootcamp_bastion_pip_name" {
-  type = string
+  type        = string
   description = "I am a bastion PIP name"
 }
 
 variable "bootcamp_bastion_name" {
-  type = string
+  type        = string
   description = "I am a bastion host name"
+}
+
+variable "bootcamp_storage_account_name" {
+  type        = string
+  description = "I am a storage account name"
 }
