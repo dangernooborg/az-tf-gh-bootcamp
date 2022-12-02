@@ -67,3 +67,18 @@ variable "private_dns_zone_group_name" {
   type        = string
   description = "I am private DNS zone group name"
 }
+
+variable "vm_name" {
+  type        = string
+  description = "I am a vm name"
+}
+
+variable "vm_username" {
+  type        = string
+  description = "I am vm username"
+}
+
+variable "vm_password" {
+  type        = string
+  description = "I am vm password"
+}
