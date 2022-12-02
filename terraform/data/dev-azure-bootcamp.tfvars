@@ -1,5 +1,17 @@
-resource_groups = {
-  "dev-terraform-bootcamp" = {
-    location = "westus2"
-  }
-}
+resource_group_name1                     = "dev-terraform-bootcamp"
+resource_group_location1                 = "westus2"
+vnet_name                                = "dev-bootcampvNet"
+vnet_address_space                       = "10.0.0.0/24"
+bastion_subnet_name                      = "AzureBastionSubnet"
+bastion_subnet_address_space             = "10.0.0.0/26"
+bastion_pip_name                         = "dev-BastionPIP"
+bastion_name                             = "bootcamp-bastion"
+storage_account_name                     = "dangernoobdemosa"
+private_endpoint_subnet_name             = "pe"
+private_endpoint_connection_name         = "sa-pe-connection"
+private_endpoint_subnet_address_prefixes = "10.0.0.64/29"
+private_dns_zone_vnet_link_name          = "sa-pe-link"
+private_dns_zone_group_name              = "sa_pe_dns_zone_group"
+vm_name                                  = "bootcamp-vm"
+vm_username                              = "jason"
+vm_password                              = "SuperS3cretP*ssw0rd"
